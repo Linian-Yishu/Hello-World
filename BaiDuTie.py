@@ -110,8 +110,10 @@ def main():
     for pagelist in pagelists:
         html = GetPersonPage(pagelist)
         info = PersonPage(html)
-        print(99, info)
+        print(info)
         SaveComputer(pagelist, info)
+        
+    print("爬取完成")
 
 
 if __name__ == '__main__':
