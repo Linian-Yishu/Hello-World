@@ -101,7 +101,7 @@ def main():
     '''主函数'''
     pagelists = []
     page_kw = input("请输入你要爬取的贴吧名称")
-    page_pn = input("请输入你要爬取的最大页数")
+    page_pn = input("请输入你要爬取的最大页码数")
     page_pn = (int(page_pn) - 1) * 50
     for page_MaxNum in range(0, page_pn + 1, 50):
         html = GetFistPage(page_kw, page_MaxNum)  # 获取页面
